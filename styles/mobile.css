@@ -1,0 +1,69 @@
+@media (max-width: 650px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .copy {
+    flex-direction: column;
+  }
+  .copy__rights {
+    margin: 15px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .map__img {
+    width: 320px;
+    left: 0;
+  }
+
+  .map__stores {
+    top: -25px;
+  }
+
+  .banner_slider__item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .banner_slider__button {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .post {
+    flex: 1 1 100%;
+    flex-grow: initial;
+    margin-right: 0;
+  }
+
+  .sale__img {
+    left: 60px;
+  }
+
+  .about__img-container {
+    height: 512px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutus__img {
+    height: 270px;
+  }
+
+  .header--static .bars {
+    filter: invert(1);
+  }
+
+  .header--static .header__logo {
+    filter: invert(1);
+  }
+}

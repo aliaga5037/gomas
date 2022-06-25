@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald/Oswald-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 200 700;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 200 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+:root {
+  --red: #ea2a35;
+  --green: #2bc46c;
+  --blue: #1783f5;
+  --yellow: #f3be2c;
+  --black: #303030;
+  --gray: #d3d3d3;
+  --text-gray: #a9a9a9;
+  --text-black: #606060;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #ed2939;
+}
+
+.partners {
+  margin-bottom: 100px;
+}
+
+#map {
+  height: 100%;
+}

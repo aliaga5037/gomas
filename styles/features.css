@@ -1,0 +1,32 @@
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 120px 0;
+}
+
+.feature__item {
+  display: flex;
+  align-items: center;
+}
+
+.feature__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  width: 58px;
+  height: 49px;
+}
+
+.feature__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #595757;
+  margin-bottom: 5px;
+}
+
+.feature__text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #595757;
+}

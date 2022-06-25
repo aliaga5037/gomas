@@ -1,0 +1,25 @@
+.corusel {
+  margin-bottom: 135px;
+}
+
+.corusel__button {
+  height: 65px;
+  width: 65px;
+  background: none;
+}
+
+.corusel__button svg {
+  height: 65px;
+  width: 65px;
+  transform: scale(1);
+  fill: transparent;
+}
+
+.corusel__button--left {
+  left: -95px;
+}
+.corusel__button--right {
+  top: calc(50% - 25px);
+  right: -95px;
+  transform: rotate(180deg);
+}

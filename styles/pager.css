@@ -1,0 +1,30 @@
+.pagination {
+  margin-top: 60px;
+}
+
+.pager {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.pager__item {
+  border: 1px solid #ea2a35;
+  margin: 0 10px;
+  color: #ea2a35;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pager__item--active {
+  background-color: #ea2a35;
+  color: #fff;
+}

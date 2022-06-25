@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header class="header header--static">
+      <div class="header__logo">
+        <a href="./index.html">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Logo"
+            height="27"
+            width="102"
+          />
+        </a>
+      </div>
+
+      <nav class="header__links nav">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="bars"></i>
+        </label>
+        <ul class="nav__items">
+          <li class="nav__item nav__logo">
+            <a href="/index.html">
+              <img
+                src="./assets/images/logo.svg"
+                alt="Logo"
+                height="27"
+                width="102"
+              />
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link nav__link--active">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="./about_us.html" class="nav__link">About us</a>
+          </li>
+          <li class="nav__item">
+            <a href="./product.html" class="nav__link">Products</a>
+          </li>
+          <li class="nav__item">
+            <a href="./mission.html" class="nav__link">Our Mission</a>
+          </li>
+          <li class="nav__item">
+            <a href="./vision.html" class="nav__link">Our Vision</a>
+          </li>
+          <li class="nav__item">
+            <a href="./blog.html" class="nav__link">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="./store.html" class="nav__link">Stores</a>
+          </li>
+          <li class="nav__item">
+            <a href="./contact.html" class="nav__link">Contact</a>
+          </li>
+          <li class="nav__item nav__social">
+            <div class="social">
+              <a href="" class="social__link">
+                <img src="./assets/images/ig.svg" alt="ig" class="social__ig" />
+              </a>
+              <a href="" class="social__link">
+                <img src="./assets/images/fb.svg" alt="fb" class="social__fb" />
+              </a>
+              <a href="" class="social__link">
+                <img
+                  src="./assets/images/twitter.svg"
+                  alt="tw"
+                  class="social__tw"
+                />
+              </a>
+              <a href="" class="social__link">
+                <img src="./assets/images/in.svg" alt="in" class="social__in" />
+              </a>
+            </div>
+          </li>
+          <li class="nav__item nav__lang">
+            <div class="lang">
+              <a href="#" class="lang__item lang__item--active">EN</a>
+              <a href="#" class="lang__item">AZ</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner container">
+        <div class="lang">
+          <a href="#" class="lang__item lang__item--active">EN</a>
+          <a href="#" class="lang__item">AZ</a>
+        </div>
+
+        <div class="banner__map">
+          <div class="map">
+            <h3 class="map__title">MAP OF STORES</h3>
+            <h5 class="map__city">Baku</h5>
+            <h5 class="map__location">Narimanov</h5>
+            <img
+              src="./assets/images/map_first.png"
+              alt="map"
+              class="map__img"
+            />
+            <div class="map__stores">
+              <div class="map__stores-count">8 Stores</div>
+              <a href="#" class="map__stores-all">See all</a>
+            </div>
+            <a href="#" class="map__button button">See all</a>
+          </div>
+        </div>
+
+        <div class="banner_slider">
+          <div class="banner_slider__container">
+            <div class="range">
+              <div class="range__left"></div>
+              <div class="range__right"></div>
+            </div>
+            <div class="banner_slider__item">
+              <h1 class="banner_slider__title">OWN PRODUCTION</h1>
+              <h3 class="banner_slider__location">in Germany</h3>
+              <p class="banner_slider__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus,
+                tempor platea malesuada ultrices vel placerat augue senectus
+                egestas. Auctor proin arcu, tempus, erat pellentesque nibh quis
+                feugiat.
+              </p>
+              <a href="" class="banner_slider__button button">See products</a>
+              <a href="" class="contact__button button"><span>See all</span></a>
+            </div>
+
+            <!-- <div class="slider__buttons">
+              <a href="" class="slider__button">01</a>
+              <span class="slider__button-divider">/</span>
+              <a href="" class="slider__button">03</a>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="social">
+          <a href="" class="social__link">
+            <img src="./assets/images/ig.svg" alt="if" class="social__ig" />
+          </a>
+          <a href="" class="social__link">
+            <img src="./assets/images/fb.svg" alt="fb" class="social__fb" />
+          </a>
+          <a href="" class="social__link">
+            <img
+              src="./assets/images/twitter.svg"
+              alt="tw"
+              class="social__tw"
+            />
+          </a>
+          <a href="" class="social__link">
+            <img src="./assets/images/in.svg" alt="in" class="social__in" />
+          </a>
+        </div>
+      </section>
+
+      <section class="products container">
+        <div class="product__item product__item--black">
+          <h5 class="product__type">new</h5>
+          <h3 class="product__name">Clutch</h3>
+          <h4 class="product__quality">Premium</h4>
+          <a href="#" class="product__button">Browse</a>
+          <img
+            src="./assets/images/product1.png"
+            alt="img"
+            class="product__img"
+          />
+          <h2 class="product__category">SPARE<br />Part</h2>
+        </div>
+
+        <div class="product__item product__item--yellow">
+          <h5 class="product__type">new</h5>
+          <h3 class="product__name">Clutch</h3>
+          <h4 class="product__quality">Premium</h4>
+          <a href="#" class="product__button product__button--yellow">Browse</a>
+          <img
+            src="./assets/images/product1.png"
+            alt="img"
+            class="product__img"
+          />
+          <h2 class="product__category">SPARE<br />Part</h2>
+        </div>
+
+        <div class="product__item product__item--red product__item--big">
+          <h5 class="product__type">new</h5>
+          <h3 class="product__name">Clutch</h3>
+          <h4 class="product__quality">Premium</h4>
+          <a href="#" class="product__button product__button--red">Browse</a>
+          <img
+            src="./assets/images/product1.png"
+            alt="img"
+            class="product__img"
+          />
+          <h2 class="product__category product__category--big">OIL</h2>
+        </div>
+
+        <div class="product__item product__item--gray product__item--big">
+          <h5 class="product__type">new</h5>
+          <h3 class="product__name">Clutch</h3>
+          <h4 class="product__quality">Premium</h4>
+          <a href="#" class="product__button">Browse</a>
+          <img
+            src="./assets/images/product1.png"
+            alt="img"
+            class="product__img"
+          />
+          <h2 class="product__category product__category--big">OIL</h2>
+        </div>
+
+        <div class="product__item product__item--green">
+          <h5 class="product__type">new</h5>
+          <h3 class="product__name">Clutch</h3>
+          <h4 class="product__quality">Premium</h4>
+          <a href="#" class="product__button product__button--green">Browse</a>
+          <img
+            src="./assets/images/product1.png"
+            alt="img"
+            class="product__img"
+          />
+          <h2 class="product__category">SPARE<br />Part</h2>
+        </div>
+
+        <div class="product__item product__item--blue">
+          <h5 class="product__type">new</h5>
+          <h3 class="product__name">Clutch</h3>
+          <h4 class="product__quality">Premium</h4>
+          <a href="#" class="product__button product__button--blue">Browse</a>
+          <img
+            src="./assets/images/product1.png"
+            alt="img"
+            class="product__img"
+          />
+          <h2 class="product__category">SPARE<br />Part</h2>
+        </div>
+      </section>
+
+      <section class="features container">
+        <div class="feature__item">
+          <div class="feature__icon">
+            <img
+              src="./assets/images/discount.svg"
+              alt="img"
+              class="feature__img"
+            />
+          </div>
+          <div class="feature__content">
+            <h5 class="feature__title">Discounts</h5>
+            <h6 class="feature__text">Every season new sales</h6>
+          </div>
+        </div>
+
+        <div class="feature__item">
+          <div class="feature__icon">
+            <img
+              src="./assets/images/delivery.svg"
+              alt="img"
+              class="feature__img"
+            />
+          </div>
+          <div class="feature__content">
+            <h5 class="feature__title">Delivery 24/7</h5>
+            <h6 class="feature__text">delivery to any country</h6>
+          </div>
+        </div>
+
+        <div class="feature__item">
+          <div class="feature__icon">
+            <img
+              src="./assets/images/original.svg"
+              alt="img"
+              class="feature__img"
+            />
+          </div>
+          <div class="feature__content">
+            <h5 class="feature__title">100% original</h5>
+            <h6 class="feature__text">without fertilizers</h6>
+          </div>
+        </div>
+
+        <div class="feature__item">
+          <div class="feature__icon">
+            <img
+              src="./assets/images/star.svg"
+              alt="img"
+              class="feature__img"
+            />
+          </div>
+          <div class="feature__content">
+            <h5 class="feature__title">Huge experience</h5>
+            <h6 class="feature__text">more than 20 years</h6>
+          </div>
+        </div>
+      </section>
+
+      <section class="about container">
+        <div class="about__img-container">
+          <!-- <img src="./assets/images/human.png" alt="img" class="about__img" /> -->
+        </div>
+        <div class="about__desc">
+          <div class="range">
+            <div class="range__left"></div>
+            <div class="range__right"></div>
+          </div>
+          <h3 class="about__title">ABOUT US</h3>
+          <p class="about__text">
+            Risus potenti id nisi fringilla tellus eu fermentum a, mattis.Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Orci pulvinar
+            cras nisl donec odio sollicitudin fusce faucibus. Amet tincidunt
+            duis mattis non mattis vulputate convallis.Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Orci pulvinar cras nisl donec
+            odio sollicitudin fusce faucibus. Amet tincidunt duis mattis non
+            mattis vulputate convallis. Risus potenti id nisi fringilla tellus
+            eu fermentum a, mattis. Risus potenti id nisi fringilla tellus eu
+            fermentum a, mattis. Risus potenti id nisi fringilla tellus eu
+            fermentum a, mattis.Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Orci pulvinar cras nisl donec odio sollicitudin
+            fusce faucibus. Amet tincidunt duis mattis non mattis vulputate
+            convallis. Risus potenti id nisi fringilla tellus eu fermentum a,
+            mattis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci
+            pulvinar cras nisl donec odio sollicitudin fusce faucibus. Amet
+            tincidunt duis mattis non mattis vulputate convallis.Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Orci pulvinar cras nisl
+            donec odio sollicitudin fusce.Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Orci pulvinar cras nisl donec odio
+            sollicitudin fusce...<a href="#" class="read-more">Read more</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="sale container">
+        <div class="sale__left">
+          <h4 class="sale__title">20% 0FF</h4>
+          <h1 class="sale__text">
+            SPARE <br />
+            PART
+          </h1>
+          <h4 class="sale__time">12 May To 12 June</h4>
+          <img
+            src="./assets/images/compressor.svg"
+            alt="img"
+            class="sale__img"
+          />
+        </div>
+
+        <div class="sale__right">
+          <h4 class="sale__detail">Air Conditioner Compressor</h4>
+          <h1 class="sale__desc">Summer Sale</h1>
+          <h4 class="sale__info">
+            Risus potenti id nisi fringilla tellus eu fermentum a, mattis.Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Orci pulvinar
+            cras nisl donec odio sollicitudin fusce faucibus. Amet tincidunt
+            duis mattis non mattis vulputate convallis.
+          </h4>
+          <a href="#" class="sale__button button">Shop</a>
+        </div>
+      </section>
+
+      <section class="blog container">
+        <div class="range">
+          <div class="range__left"></div>
+          <div class="range__right"></div>
+        </div>
+
+        <h2 class="blog__header">RECENT BLOGS</h2>
+        <h4 class="blog__title">
+          Hjdfjd sfdsfiscs iejfdjowijfpweddi jncnsdos kdskduiss
+        </h4>
+        <a href="#" class="blog__button read-more">All blogs</a>
+        <div class="clearfix"></div>
+        <div class="blog__posts home-blog">
+          <div class="post">
+            <img src="./assets/images/car.jpg" alt="img" class="post__img" />
+            <h4 class="post__date">May 5, 2022</h4>
+            <h3 class="post__title">How to choose perfect spare parts</h3>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Adipiscing adipiscing incidunt duis scelerisque. Amet, condimentum
+              lectus rutrum ut. Non iaculis mauris nascetur faucibus....
+              <a href="#" class="post__button read-more">Read more</a>
+            </p>
+          </div>
+
+          <div class="post">
+            <img src="./assets/images/car.jpg" alt="img" class="post__img" />
+            <h4 class="post__date">May 5, 2022</h4>
+            <h3 class="post__title">How to choose perfect spare parts</h3>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Adipiscing adipiscing incidunt duis scelerisque. Amet, condimentum
+              lectus rutrum ut. Non iaculis mauris nascetur faucibus....
+              <a href="#" class="post__button read-more">Read more</a>
+            </p>
+          </div>
+
+          <div class="post">
+            <img src="./assets/images/car.jpg" alt="img" class="post__img" />
+            <h4 class="post__date">May 5, 2022</h4>
+            <h3 class="post__title">How to choose perfect spare parts</h3>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Adipiscing adipiscing incidunt duis scelerisque. Amet, condimentum
+              lectus rutrum ut. Non iaculis mauris nascetur faucibus....
+              <a href="#" class="post__button read-more">Read more</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sale sale--green container">
+        <div class="sale__left">
+          <h4 class="sale__title">20% 0FF</h4>
+          <h1 class="sale__text">
+            SPARE <br />
+            PART
+          </h1>
+          <h4 class="sale__time">12 May To 12 June</h4>
+          <img src="./assets/images/tier.png" alt="img" class="sale__img" />
+        </div>
+
+        <div class="sale__right">
+          <h4 class="sale__detail">Air Conditioner Compressor</h4>
+          <h1 class="sale__desc">Summer Sale</h1>
+          <h4 class="sale__info">
+            Risus potenti id nisi fringilla tellus eu fermentum a, mattis.Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Orci pulvinar
+            cras nisl donec odio sollicitudin fusce faucibus. Amet tincidunt
+            duis mattis non mattis vulputate convallis.
+          </h4>
+          <a href="#" class="sale__button sale__button--green button">Shop</a>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer__info">
+        <img src="./assets/images/logo.svg" alt="logo" class="footer__logo" />
+        <p class="footer__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit.
+        </p>
+        <div class="footer__social social">
+          <a href="" class="social__link">
+            <img src="./assets/images/ig.svg" alt="ig" class="social__ig" />
+          </a>
+          <a href="" class="social__link">
+            <img src="./assets/images/fb.svg" alt="fb" class="social__fb" />
+          </a>
+          <a href="" class="social__link">
+            <img
+              src="./assets/images/twitter.svg"
+              alt="tw"
+              class="social__tw"
+            />
+          </a>
+          <a href="" class="social__link">
+            <img src="./assets/images/in.svg" alt="in" class="social__in" />
+          </a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h3 class="footer__link-title">Quick Links</h3>
+        <a href="#" class="footer__link">Terms & Conditions</a>
+        <a href="#" class="footer__link">Privacy & Policy</a>
+        <a href="#" class="footer__link">Stores</a>
+        <a href="#" class="footer__link">Products</a>
+      </div>
+      <div class="footer__contact">
+        <h3 class="footer__link-title">Contact</h3>
+        <h3 class="footer__link">(+99477) 344 50 40</h3>
+        <h3 class="footer__link">(+99455) 344 50 40</h3>
+        <h3 class="footer__link">Info@gomasauto.az</h3>
+        <h3 class="footer__link">
+          Babək pr., 2360( Audi Bakı mərkəzi ilə üzbəüz
+        </h3>
+      </div>
+      <div class="footer__subscribe">
+        <h3 class="footer__link-title">Subscribe to our Email</h3>
+        <h2 class="footer__subscribe-info">For Latest News & Updates</h2>
+        <div class="footer__subscribe-input">
+          <input
+            type="text"
+            class="footer__input"
+            placeholder="Enter your email"
+          />
+          <button class="footer__button button">Subscribe</button>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copy container">
+      <div class="copy__logo">
+        <div class="copy__made">made by</div>
+        <img src="./assets/images/aildco.svg" alt="logo" class="copy__img" />
+      </div>
+      <div class="copy__rights">© 2022 All rights reserved</div>
+      <div class="copy__lang lang">
+        <a href="#" class="lang__item lang__item--active">EN</a>
+        <a href="#" class="lang__item">AZ</a>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

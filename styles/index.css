@@ -1,0 +1,20 @@
+@import "variables.css";
+@import "header.css";
+@import "banner.css";
+@import "product.css";
+@import "features.css";
+@import "about.css";
+@import "sale.css";
+@import "blog.css";
+@import "footer.css";
+@import "breadcrumb.css";
+@import "pager.css";
+@import "slider.css";
+@import "mission.css";
+@import "corusel.css";
+@import "contact.css";
+@import "store.css";
+@import "info.css";
+
+@import "tablet.css";
+@import "mobile.css";
