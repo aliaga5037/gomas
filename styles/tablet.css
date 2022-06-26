@@ -17,7 +17,6 @@
     background-image: url("../assets/images/bars.svg");
   }
 
-
   #check:checked ~ ul {
     left: 0;
     top: 0;
@@ -26,10 +25,19 @@
     z-index: 3;
   }
 
+  #check:checked ~ .checkbtn {
+    z-index: 21;
+    position: relative;
+    top: -30px;
+    transition: all 0.5s;
+  }
+
   .nav__logo {
     display: block;
     margin-top: 20px !important;
     margin-bottom: 20px !important;
+    text-align: left;
+    margin-left: 25px;
   }
   .nav__item {
     margin: 0;
