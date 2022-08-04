@@ -67,3 +67,15 @@
   width: 100%;
   height: 233px;
 }
+
+.post {
+  flex-grow: inherit;
+}
+
+.post__date {
+  top: 0;
+}
+
+.post__date--top {
+  top: -125px;
+}

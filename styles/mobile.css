@@ -66,10 +66,4 @@
   .header--static .header__logo {
     filter: invert(1);
   }
-
-  #check:checked ~ .checkbtn > .bars {
-    filter: invert(0);
-    background-image: url("../assets/images/close.svg");
-    transition: all 0.5s;
-  }
 }

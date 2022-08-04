@@ -278,4 +278,28 @@
     padding-left: 35px;
     padding-right: 35px;
   }
+
+  #check:checked ~ ul {
+    width: 200px;
+  }
+
+  #check:checked ~ .checkbtn > .bars {
+    filter: invert(0);
+    background-image: url("../assets/images/close.svg");
+  }
+
+  #check:checked ~ .checkbtn {
+    top: 0;
+  }
+  .bars {
+    transition: all 0.5s;
+  }
+  nav ul {
+    display: none !important;
+    transition: none;
+  }
+
+  #check:checked ~ ul {
+    display: flex !important;
+  }
 }

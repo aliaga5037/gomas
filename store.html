@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css"
+    />
   </head>
   <body>
     <header class="header header--static container">
@@ -120,11 +128,54 @@
 
           <div class="stores__filter">
             <a href="#" class="stores__all">All stores</a>
+            <select
+              class="stores__select selectpicker des"
+              data-show-subtext="false"
+              data-live-search="true"
+              style="-webkit-appearance: none"
+            >
+              <option value="ALVA">Aluva</option>
+              <option value="PNCU">Pulinchudu</option>
+              <option value="CPPY">CompanyPady</option>
+              <option value="ATTK">Ambattukavu</option>
+              <option value="MUTT">Muttom</option>
+              <option value="KLMT">Kalamassery</option>
+              <option value="CCUV">Cusat</option>
+              <option value="PDPM">Pathadipalam</option>
+              <option value="EDAP">Edapally Jn.</option>
+              <option value="CGPP">Changampuzha Park</option>
+              <option value="PARV">Palarivattom</option>
+              <option value="JLSD">JLN Stadium</option>
+              <option value="KALR">Kaloor</option>
+              <option value="LSSE">Lissie Jn</option>
+              <option value="MGRD">MG Road</option>
+              <option value="MACE">Maharaja College</option>
+              <option value="">undefined</option>
+            </select>
 
-            <select name="" id="" class="stores__select">
-              <option value="" default>Destricts</option>
-              <option value="baku">Baku</option>
-              <option value="gence">Gence</option>
+            <select
+              class="stores__select selectpicker des"
+              data-show-subtext="false"
+              data-live-search="true"
+              style="-webkit-appearance: none"
+            >
+              <option value="ALVA">Aluva</option>
+              <option value="PNCU">Pulinchudu</option>
+              <option value="CPPY">CompanyPady</option>
+              <option value="ATTK">Ambattukavu</option>
+              <option value="MUTT">Muttom</option>
+              <option value="KLMT">Kalamassery</option>
+              <option value="CCUV">Cusat</option>
+              <option value="PDPM">Pathadipalam</option>
+              <option value="EDAP">Edapally Jn.</option>
+              <option value="CGPP">Changampuzha Park</option>
+              <option value="PARV">Palarivattom</option>
+              <option value="JLSD">JLN Stadium</option>
+              <option value="KALR">Kaloor</option>
+              <option value="LSSE">Lissie Jn</option>
+              <option value="MGRD">MG Road</option>
+              <option value="MACE">Maharaja College</option>
+              <option value="">undefined</option>
             </select>
           </div>
         </div>
@@ -320,8 +371,20 @@
 
             type: "red",
           },
-        ];
+          {
+            position: new google.maps.LatLng(40.4, 49.85),
+            content: `        <div class="info">
+          <div class="info__avatar"></div>
+          <h1 class="info__name">Nijat</h1>
+          <h3 class="info__text">Babək pr., 2360( Audi Bakı mərkəzi ilə üzbəüz)</h3>
+          <h3 class="info__text">(+99477) 344 50 40</h3>
+          <h3 class="info__text">Info@gomasauto.az</h3>
+        </div>`,
 
+            type: "green",
+          },
+        ];
+        let lastInfoWindow;
         // Create markers.
         for (let i = 0; i < features.length; i++) {
           const infowindow = new google.maps.InfoWindow({
@@ -335,16 +398,51 @@
           });
 
           marker.addListener("click", () => {
+            if (lastInfoWindow) lastInfoWindow.close();
             infowindow.open({
               anchor: marker,
               map,
               shouldFocus: false,
             });
+            lastInfoWindow = infowindow;
           });
         }
       }
 
       window.initMap = initMap;
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+    <style>
+      .selectpicker option {
+        border: none;
+        background-color: white;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        color: #ea2a35;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 0;
+        padding-left: 0;
+        margin-top: -20px;
+        background: none;
+      }
+      select.selectpicker {
+        border: none;
+        background-color: white;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        color: #ea2a35;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 0;
+        padding-left: 0;
+        margin-top: -20px;
+        background: none;
+      }
+    </style>
   </body>
 </html>

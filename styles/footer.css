@@ -12,7 +12,7 @@
   flex: 1 1 auto;
 }
 
-.footer__info{
+.footer__info {
   margin-right: 15px;
 }
 
@@ -107,7 +107,7 @@
   color: #666666;
 }
 
-.copy__img{
+.copy__img {
   margin-top: 10px;
 }
 
@@ -117,4 +117,18 @@
 
 .copy__lang .lang__item:last-child {
   margin-left: 10px;
+}
+
+.footer__subscribe-input {
+  background: linear-gradient(
+    270.04deg,
+    #d8d5d5 0.14%,
+    rgba(196, 196, 196, 0) 101.01%
+  );
+  border-radius: 5px;
+}
+
+.footer__input {
+  background: transparent;
+  width: 60%;
 }
