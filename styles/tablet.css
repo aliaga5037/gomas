@@ -22,7 +22,7 @@
     top: 0;
     flex-direction: column;
     justify-content: flex-start;
-    z-index: 3;
+    z-index: 7;
   }
 
   #check:checked ~ .checkbtn {
@@ -82,13 +82,15 @@
 
   nav ul {
     position: fixed;
-    width: 100%;
+    width: 200px;
     height: 100vh;
     background: #fff;
-    top: 80px;
+    top: 0px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+    flex-direction: column !important;
+    z-index: 7;
   }
   nav ul li {
     display: block;
@@ -279,10 +281,6 @@
     padding-right: 35px;
   }
 
-  #check:checked ~ ul {
-    width: 200px;
-  }
-
   #check:checked ~ .checkbtn > .bars {
     filter: invert(0);
     background-image: url("../assets/images/close.svg");
@@ -294,12 +292,24 @@
   .bars {
     transition: all 0.5s;
   }
-  nav ul {
-    display: none !important;
-    transition: none;
-  }
 
   #check:checked ~ ul {
-    display: flex !important;
+    transition: all 0.5s;
+  }
+
+  .backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    visibility: hidden;
+  }
+
+  #check:checked ~ .backdrop{
+    visibility: visible;
   }
 }

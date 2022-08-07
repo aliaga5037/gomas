@@ -16,6 +16,15 @@
   margin: 0;
 }
 
+.header--sticky{
+  position: fixed;
+  background-color: #ebebeb;
+  top: 0;
+  padding: 25px !important;
+  margin: 0;
+  z-index: 2;
+}
+
 .nav__items {
   display: flex;
   flex-direction: row;
